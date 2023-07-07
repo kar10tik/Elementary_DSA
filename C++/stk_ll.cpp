@@ -44,7 +44,7 @@ int pop()
 int peek()
 {
     if (not isunderflow())
-    return head -> data;
+        return head -> data;
     return -99; 
 }
 
@@ -65,7 +65,7 @@ void display()
 
 int main()
 {
-    char next='y';
+    char next = 'y';
     int choice, e;
     do{
         cout << "Stack Using LL" << endl;

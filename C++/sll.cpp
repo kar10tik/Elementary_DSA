@@ -14,6 +14,7 @@ class Node
 
 Node *head = NULL;
 
+// Insert a node at the stack top
 void insert_node_b(int x)
 {
     head = new Node();
@@ -21,6 +22,7 @@ void insert_node_b(int x)
     head -> next = NULL;
 }
 
+// Insert a node in the middle of the stack
 void insert_node_m(int n)
 {
     Node *p = head;
@@ -29,6 +31,7 @@ void insert_node_m(int n)
     Node *q = p -> next;
 }
 
+// Insert a node at the end of the stack
 void insert_node_e(int x)
 {
     Node *p = head;
@@ -40,6 +43,7 @@ void insert_node_e(int x)
     p -> next = NULL;
 }
 
+// Delete a node from the beginning of the stack
 void delete_node_b()
 {
     if (head == NULL)
@@ -50,6 +54,7 @@ void delete_node_b()
     delete temp;
 }
 
+// Delete a node from the middle of the stack
 void delete_node_m(int n)
 {
     Node *p = head;
@@ -60,6 +65,7 @@ void delete_node_m(int n)
     delete q;
 }
 
+// Delete a node from the end of the stack
 void delete_node_e()
 {
     Node *p = head;
@@ -84,6 +90,7 @@ void delete_node_e()
         }
 }
 
+// Display the stack
 void display()
 {
     Node *p = head;

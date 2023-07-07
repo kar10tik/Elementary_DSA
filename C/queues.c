@@ -4,8 +4,8 @@ int q[10], rear, front; //q is an array/queue of integers
 
 void initialize()
 {
-    rear=0;
-    front=-1;
+    rear = 0;
+    front = -1;
 }
 
 int isoverflow()
@@ -16,7 +16,7 @@ int isoverflow()
 
 int isunderflow()
 {
-    if (front==rear-1) return 1;
+    if (front == rear-1) return 1;
     return 0;
 }
 
@@ -27,8 +27,8 @@ int enqueue(int z)
         puts("Queue is full!");
         return 999;
     }
-    q[rear]=z;
-    rear+=1;
+    q[rear] = z;
+    rear += 1;
     return 1;
 }
 
@@ -49,10 +49,10 @@ void show()
     if (isunderflow()) puts("Queue empty!");
     else
     {
-        for (i=0; i<10; i++)
+        for (i = 0; i < 10; i++)
         {
-            if (q[i]==0) break;
-            else printf("%d\t",q[i]);
+            if (q[i] == 0) break;
+            else printf("%d\t", q[i]);
         }    
     puts(" ");
     }
@@ -61,7 +61,7 @@ void show()
 int main()
 {
     initialize();
-    char next='y';
+    char next = 'y';
     int choice, e;
     puts("Welcome to Queue Menu!");
     puts("The queue size is 10"); //Try to input queue size from user
